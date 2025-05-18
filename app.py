@@ -35,7 +35,7 @@ def predict():
     predicted_class = np.argmax(result)
     predicted_class_name = index_to_class[str(predicted_class)]
 
-    return jsonify({'class': predicted_class_name})
+    return jsonify({'attraction': predicted_class_name})
 
 
 if __name__ == '__main__':
