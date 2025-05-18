@@ -1,7 +1,7 @@
 import requests
 
-url = 'http://127.0.0.1:5000/predict'
-image_path = 'sydney2.jpg'  # Replace with an image path
+url = 'https://licentaserver.onrender.com/predict'  # Your Render app URL
+image_path = 'sydney2.jpg'  # Path to your local image
 
 with open(image_path, 'rb') as img_file:
     response = requests.post(url, files={'image': img_file})
